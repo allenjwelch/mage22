@@ -1,0 +1,24 @@
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .page-header .panel.wrapper {
+        background: #333;
+    }
+
+    .header.panel > .header.links {
+        float: left;
+        width: 100%; 
+    }
+
+    .header.panel > .header.links > li {
+        width: auto; 
+        float: right;
+        // margin: 0;
+    }
+    header.panel > .header.links > li.authorization-link {
+        // text-align: right; 
+    }
+    .header.panel > .header.links > li.welcome {
+        // width: 80%; 
+        float: left !important;
+    }
+}
