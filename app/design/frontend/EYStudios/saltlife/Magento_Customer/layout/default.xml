@@ -9,6 +9,7 @@ no changes
                 <argument name="show_part" xsi:type="string">welcome</argument>
             </arguments>
         </block>
+
         <referenceBlock name="header.links">
             <block class="Magento\Customer\Block\Account\Customer" name="customer" template="Magento_Customer::account/customer.phtml" before="-"/>
             <block class="Magento\Customer\Block\Account\AuthorizationLink" name="authorization-link-login" template="Magento_Customer::account/link/authorization.phtml">
@@ -17,9 +18,11 @@ no changes
                 </arguments>
             </block>
         </referenceBlock>
+
+
         <move element="header" destination="header.links" before="-"/>
-        <move element="register-link" destination="header.links"/>
+        <move element="register-link" destination="header.links"/> <!-- Create Account link -->
         <move element="top.links" destination="customer"/>
-        <move element="authorization-link" destination="top.links" after="-"/>
+        <move element="authorization-link-login" destination="header.links" after="register-link"/> <!-- Sign In link -->
     </body>
 </page>

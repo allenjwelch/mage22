@@ -1,0 +1,84 @@
+<div class="homepage">
+    <!-- <h1>Home Page Template</h1> -->
+
+    <section class="hero-image">
+        <?php // references the cms block with the specified id
+        echo $this->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('salt_life_hero')
+        ->toHtml();
+        ?>
+
+        <article class="hero-caption">
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_hero_caption')
+            ->toHtml();
+            ?>
+        </article>
+    </section>
+
+    <section class="home-content">
+
+        <article class="kicker mens-kicker">
+            <a class="kicker-link" href="men.html">
+                <?php // references the cms block with the specified id
+                echo $this->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('salt_life_mens_kicker')
+                ->toHtml();
+                ?>
+                <h2>MENS</h2><span> SHOP ALL</span>
+            </a>
+    
+            <?php 
+            echo $this->getLayout()
+            ->createBlock("Magento\Catalog\Block\Product\Widget\NewWidget")
+            ->setDisplayType("all_products")
+            ->setProductsCount("2")
+            ->setTemplate("product/widget/new/content/new_grid.phtml")->toHtml()
+            ?>
+    
+        </article>
+    
+        <article class="kicker ladies-kicker">
+            <?php 
+            echo $this->getLayout()
+            ->createBlock("Magento\Catalog\Block\Product\Widget\NewWidget")
+            ->setDisplayType("all_products")
+            ->setProductsCount("2")
+            ->setTemplate("product/widget/new/content/new_grid.phtml")->toHtml()
+            ?>
+
+            <a class="kicker-link" href="women.html">
+                <?php // references the cms block with the specified id
+                echo $this->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('salt_life_ladies_kicker')
+                ->toHtml();
+                ?>
+                <h2>LADIES</h2><span> SHOP ALL</span>
+            </a>
+    
+        </article>
+    
+        <article class="kicker gear-kicker">
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_gear_kicker')
+            ->toHtml();
+            ?>
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_gear_kicker_foreground')
+            ->toHtml();
+            ?>
+        </article>
+
+
+    </section>
+
+</div>
