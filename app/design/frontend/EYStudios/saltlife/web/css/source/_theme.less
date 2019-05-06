@@ -44,7 +44,42 @@
         width: 15%;
     }
 
+    .header.content {
+        display: flex;
+        justify-content: space-around;
+    }
 
+    .nav-sections {
+        margin: -10px auto 0;
+        order: 2;
+    }
+
+    .nav-sections, .nav-sections .navigation {
+        background: none;
+    }
+
+    .block-search {
+        order: 3;
+    }
+
+    .minicart-wrapper {
+        order: 4;
+    }
+
+    .navigation .level0.parent > .level-top > .ui-menu-icon {
+        margin-right: -5px;
+    }
+
+    .navigation .level0.parent > .level-top > .ui-menu-icon:after {
+        font-size: 25px;
+        line-height: 7px;
+        color: #00b7ff;
+        font-weight: bold;
+    }
+
+    .navigation .level0 > .level-top {
+        text-transform: uppercase;
+    }
 
 }
 
@@ -99,7 +134,7 @@
 }
 
 .home-content {
-    max-width: 1250px; 
+    max-width: 1350px; 
     margin: 0 auto; 
 }
 
@@ -136,14 +171,16 @@
     vertical-align: top;
 } 
 
-.kicker-link h2 {
+.kicker-link h2, 
+.kicker-text h2 {
     font: 700 32px 'Arial', sans-serif;
     margin: 0;
     display: inline-block;
     color: #000;
 }
 
-.kicker-link h2:after {
+.kicker-link h2:after, 
+.kicker-text h2:after  {
     content: '';
     height: 25px;
     width: 5px;
@@ -152,7 +189,8 @@
     padding-left: 3px;
 }
 
-.kicker-link span {
+.kicker-link span, 
+.kicker-text span  {
     color: #000;
     font: 700 14px 'Arial', sans-serif;
     padding: 10px 10px;
@@ -186,6 +224,40 @@
 .kicker .block-content .product-item .product-image-container {
     border: 1px solid #ccc; 
 }
+
+.gear-kicker {
+    position: relative;
+}
+
+.gear-kicker img {
+    position: absolute;
+    bottom: -100px; 
+    left: 22%;
+    width: 60%;
+}
+
+.gear-kicker a img {
+    position: static;
+    width: initial;
+}
+
+.gear-kicker .kicker-text {
+    padding-left: 20px;
+}
+
+.gear-kicker .kicker-text a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #00b7ff;
+    font-weight: 700;
+
+}
+.gear-kicker .kicker-text a span {
+    padding: 0;
+    color: #00b7ff;
+    vertical-align: baseline;
+}
+
 
 // .kicker .block-content .product-item {
 //     text-align: center;
@@ -231,5 +303,27 @@
 }
 
 .explore a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.explore a h5 {
+    color: #00b7ff;
+}
+
+.adventure {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.adventure h2 {
+    font-weight: 700;
+}
+
+.adventure h2 span {
+    color: #00b7ff;
+}
+
+.adventure p {
     display: inline-block;
 }

@@ -64,19 +64,23 @@
         </article>
     
         <article class="kicker gear-kicker">
-            <?php // references the cms block with the specified id
-            echo $this->getLayout()
-            ->createBlock('Magento\Cms\Block\Block')
-            ->setBlockId('salt_life_gear_kicker')
-            ->toHtml();
-            ?>
+            <a href="">
+
+                <?php // references the cms block with the specified id
+                echo $this->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('salt_life_gear_kicker')
+                ->toHtml();
+                ?>
+            </a>
+
             
             <div class="kicker-text">
                 <h2>GEAR</h2><span> SHOP ALL</span>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, voluptas!</p>
-                <a href="">Decals</a>
-                <a href="">Accesories</a>
-                <a href="">Home & Outdoors</a>
+                <a href=""><span>></span> DECALS</a>
+                <a href=""><span>></span> ACCESSORIES</a>
+                <a href=""><span>></span> HOME & OUTDOORS</a>
             </div>
 
             <?php // references the cms block with the specified id
@@ -104,6 +108,7 @@
                 ->setBlockId('salt_life_explore1')
                 ->toHtml();
                 ?>
+                <h5><span>></span> SALT LIFE GIVES BACK</h5>
             </a>
             <a href="">
                 <?php // references the cms block with the specified id
@@ -112,6 +117,7 @@
                 ->setBlockId('salt_life_explore2')
                 ->toHtml();
                 ?>
+                <h5><span>></span> EAT HERE</h5>
             </a>
             <a href="">
                 <?php // references the cms block with the specified id
@@ -120,7 +126,54 @@
                 ->setBlockId('salt_life_explore3')
                 ->toHtml();
                 ?>
+                <h5><span>></span> TEAM SALT LIFE</h5>
             </a>
+        </article>
+
+        <article class="adventure">
+            <h2>SHARE YOUR <span>#SALTLIFE</span> ADVENTURES</h2>
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_adventure1')
+            ->toHtml();
+            ?>
+
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_adventure2')
+            ->toHtml();
+            ?>
+
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_adventure3')
+            ->toHtml();
+            ?>
+
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_adventure4')
+            ->toHtml();
+            ?>
+
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_adventure5')
+            ->toHtml();
+            ?>
+
+            <?php // references the cms block with the specified id
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('salt_life_adventure6')
+            ->toHtml();
+            ?>
+
         </article>
 
 
